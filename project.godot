@@ -14,3 +14,9 @@ config/name="TowerDefense"
 run/main_scene="res://Game.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
+
+[importer_defaults]
+
+texture={
+"editor/scale_with_editor_scale": true
+}
