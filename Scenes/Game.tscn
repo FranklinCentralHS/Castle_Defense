@@ -1,72 +1,72 @@
 [gd_scene load_steps=22 format=3 uid="uid://dn6p4mrpkopy3"]
 
-[ext_resource type="Texture2D" uid="uid://b32wirkx3gqs7" path="res://assets/sprites/Isometric Tower Defense Pack/Sprites/Road tiles/Spring biome/road_spring(1).png" id="1_kau5w"]
-[ext_resource type="Texture2D" uid="uid://dh7tdv17pc1qw" path="res://assets/sprites/Isometric Tower Defense Pack/Sprites/Road tiles/Spring biome/road_spring(2).png" id="2_3us5p"]
-[ext_resource type="Texture2D" uid="uid://b0mxl6s4cnbb" path="res://assets/sprites/Isometric Tower Defense Pack/Sprites/Road tiles/Spring biome/road_spring(7).png" id="3_5ihdr"]
-[ext_resource type="Texture2D" uid="uid://io488v3bphs0" path="res://assets/sprites/Isometric Tower Defense Pack/Sprites/Road tiles/Spring biome/road_spring(8).png" id="4_0m3fi"]
-[ext_resource type="Texture2D" uid="uid://cyu5teopksvtt" path="res://assets/sprites/Isometric Tower Defense Pack/Sprites/Road tiles/Spring biome/road_spring(9).png" id="5_a0xgk"]
-[ext_resource type="Texture2D" uid="uid://cobwphw0hfjvm" path="res://assets/sprites/Isometric Tower Defense Pack/Sprites/Road tiles/Spring biome/road_spring(11).png" id="6_yyoqx"]
-[ext_resource type="Texture2D" uid="uid://ba1jrivu4tuho" path="res://assets/sprites/Isometric Tower Defense Pack/Sprites/Road tiles/Spring biome/road_spring(12).png" id="7_3fcwm"]
-[ext_resource type="Texture2D" uid="uid://pvc7rn5ftwrq" path="res://assets/sprites/Isometric Tower Defense Pack/Sprites/Landscape tiles/grass.png" id="8_oib61"]
-[ext_resource type="Texture2D" uid="uid://cgelgchnlwkw1" path="res://assets/sprites/Isometric Tower Defense Pack/Sprites/Landscape tiles/buildingPlaceGrass.png" id="9_lgi4d"]
-[ext_resource type="Texture2D" uid="uid://dngsy0qheear4" path="res://assets/sprites/Isometric Tower Defense Pack/Sprites/Road tiles/Spring biome/road_spring(5).png" id="10_gq3y2"]
+[ext_resource type="Texture2D" uid="uid://b32wirkx3gqs7" path="res://assets/sprites/Isometric Tower Defense Pack/Sprites/Road tiles/Spring biome/road_spring(1).png" id="1_lu01y"]
+[ext_resource type="Texture2D" uid="uid://dh7tdv17pc1qw" path="res://assets/sprites/Isometric Tower Defense Pack/Sprites/Road tiles/Spring biome/road_spring(2).png" id="2_c1jay"]
+[ext_resource type="Texture2D" uid="uid://b0mxl6s4cnbb" path="res://assets/sprites/Isometric Tower Defense Pack/Sprites/Road tiles/Spring biome/road_spring(7).png" id="3_e51qk"]
+[ext_resource type="Texture2D" uid="uid://io488v3bphs0" path="res://assets/sprites/Isometric Tower Defense Pack/Sprites/Road tiles/Spring biome/road_spring(8).png" id="4_afn07"]
+[ext_resource type="Texture2D" uid="uid://cyu5teopksvtt" path="res://assets/sprites/Isometric Tower Defense Pack/Sprites/Road tiles/Spring biome/road_spring(9).png" id="5_bd2a2"]
+[ext_resource type="Texture2D" uid="uid://cobwphw0hfjvm" path="res://assets/sprites/Isometric Tower Defense Pack/Sprites/Road tiles/Spring biome/road_spring(11).png" id="6_58nk2"]
+[ext_resource type="Texture2D" uid="uid://ba1jrivu4tuho" path="res://assets/sprites/Isometric Tower Defense Pack/Sprites/Road tiles/Spring biome/road_spring(12).png" id="7_1vbn3"]
+[ext_resource type="Texture2D" uid="uid://pvc7rn5ftwrq" path="res://assets/sprites/Isometric Tower Defense Pack/Sprites/Landscape tiles/grass.png" id="8_tdten"]
+[ext_resource type="Texture2D" uid="uid://cgelgchnlwkw1" path="res://assets/sprites/Isometric Tower Defense Pack/Sprites/Landscape tiles/buildingPlaceGrass.png" id="9_bchxc"]
+[ext_resource type="Texture2D" uid="uid://dngsy0qheear4" path="res://assets/sprites/Isometric Tower Defense Pack/Sprites/Road tiles/Spring biome/road_spring(5).png" id="10_tw5hp"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_c4hc1"]
-texture = ExtResource("1_kau5w")
+texture = ExtResource("1_lu01y")
 texture_region_size = Vector2i(251, 235)
 0:0/0 = 0
 0:0/0/texture_origin = Vector2i(0, -45)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6ra0g"]
-texture = ExtResource("2_3us5p")
+texture = ExtResource("2_c1jay")
 texture_region_size = Vector2i(251, 235)
 0:0/0 = 0
 0:0/0/texture_origin = Vector2i(0, -45)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wwakp"]
-texture = ExtResource("3_5ihdr")
+texture = ExtResource("3_e51qk")
 texture_region_size = Vector2i(251, 235)
 0:0/0 = 0
 0:0/0/texture_origin = Vector2i(0, -45)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_a7fto"]
-texture = ExtResource("4_0m3fi")
+texture = ExtResource("4_afn07")
 texture_region_size = Vector2i(250, 235)
 0:0/0 = 0
 0:0/0/texture_origin = Vector2i(0, -45)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wf056"]
-texture = ExtResource("5_a0xgk")
+texture = ExtResource("5_bd2a2")
 texture_region_size = Vector2i(251, 235)
 0:0/0 = 0
 0:0/0/texture_origin = Vector2i(0, -45)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8n8kq"]
-texture = ExtResource("6_yyoqx")
+texture = ExtResource("6_58nk2")
 texture_region_size = Vector2i(251, 235)
 0:0/0 = 0
 0:0/0/texture_origin = Vector2i(0, -45)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lywmi"]
-texture = ExtResource("7_3fcwm")
+texture = ExtResource("7_1vbn3")
 texture_region_size = Vector2i(251, 235)
 0:0/0 = 0
 0:0/0/texture_origin = Vector2i(0, -45)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1evak"]
-texture = ExtResource("8_oib61")
+texture = ExtResource("8_tdten")
 texture_region_size = Vector2i(250, 235)
 0:0/0 = 0
 0:0/0/texture_origin = Vector2i(0, -45)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_e72vg"]
-texture = ExtResource("9_lgi4d")
+texture = ExtResource("9_bchxc")
 texture_region_size = Vector2i(250, 235)
 0:0/0 = 0
 0:0/0/texture_origin = Vector2i(0, -45)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6ki2c"]
-texture = ExtResource("10_gq3y2")
+texture = ExtResource("10_tw5hp")
 texture_region_size = Vector2i(251, 235)
 0:0/0 = 0
 0:0/0/texture_origin = Vector2i(0, -45)
