@@ -1,0 +1,44 @@
+[gd_scene load_steps=7 format=3 uid="uid://drjjb22r2qb66"]
+
+[ext_resource type="Texture2D" uid="uid://drtawkvt7lw81" path="res://assets/sprites/Isometric Tower Defense Pack/Sprites/Towers/Archer/archer.png" id="1_0efvk"]
+[ext_resource type="Texture2D" uid="uid://3vqpaenffyr2" path="res://assets/sprites/Isometric Tower Defense Pack/Sprites/Towers/Archer/bow_animation(1).png" id="2_r80c8"]
+[ext_resource type="Texture2D" uid="uid://conv42suusksi" path="res://assets/sprites/Isometric Tower Defense Pack/Sprites/Towers/Archer/bow_animation(2).png" id="3_istnt"]
+[ext_resource type="Texture2D" uid="uid://btkgrupso0ack" path="res://assets/sprites/Isometric Tower Defense Pack/Sprites/Towers/Archer/bow_animation(3).png" id="4_kd0bd"]
+[ext_resource type="Texture2D" uid="uid://0lin65uogr6w" path="res://assets/sprites/Isometric Tower Defense Pack/Sprites/Towers/Archer/bow_animation(4).png" id="5_ouw7x"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_43m4b"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_r80c8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_istnt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_kd0bd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_ouw7x")
+}, {
+"duration": 1.0,
+"texture": null
+}],
+"loop": false,
+"name": &"default",
+"speed": 10.0
+}]
+
+[node name="Archer" type="Sprite2D"]
+texture = ExtResource("1_0efvk")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-0.625, 4.125)
+rotation = 0.23911
+scale = Vector2(0.560811, 0.643617)
+sprite_frames = SubResource("SpriteFrames_43m4b")
+frame = 5
+frame_progress = 1.0
