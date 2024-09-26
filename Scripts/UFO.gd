@@ -1,4 +1,2 @@
 extends baddie
-class_name Basic
-
-
+class_name basic
