@@ -1,11 +1,15 @@
-[gd_scene load_steps=2 format=3 uid="uid://rgxlcxhp3uhi"]
+[gd_scene load_steps=3 format=3 uid="uid://rgxlcxhp3uhi"]
 
 [ext_resource type="Texture2D" uid="uid://2st1b6a6wfnj" path="res://assets/sprites/Isometric Tower Defense Pack/Sprites/Towers/Archer/archer_level_1.png" id="1_nleyf"]
+[ext_resource type="PackedScene" uid="uid://cx6rj8ryc5cck" path="res://Scenes/archer.tscn" id="2_l4po0"]
 
 [node name="Archer Tower" type="StaticBody2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(0, -83)
+position = Vector2(0, -81.5)
+scale = Vector2(1, 0.981928)
 texture = ExtResource("1_nleyf")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+[node name="Archer" parent="Sprite2D" instance=ExtResource("2_l4po0")]
+z_index = -1
+position = Vector2(-1, -33.0982)
