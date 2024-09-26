@@ -1,4 +1,4 @@
-extends Node2D
+extends StaticBody2D
 class_name Tower
 
 @export var vision = 10

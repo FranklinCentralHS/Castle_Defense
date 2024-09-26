@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://n8k6qp37r6nr"]
+
+[ext_resource type="Texture2D" uid="uid://b0n4ykt07gc7y" path="res://assets/sprites/Isometric Tower Defense Pack/Sprites/UFO/UFO(1).png" id="2_uqf65"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_wnkeg"]
+radius = 24.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_i83fm"]
+radius = 32.0
+height = 64.0
+
+[node name="Basic UFO" type="NavigationAgent2D"]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
+position = Vector2(0, -24)
+texture = ExtResource("2_uqf65")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+position = Vector2(0, -40)
+shape = SubResource("CircleShape2D_wnkeg")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="CharacterBody2D"]
+position = Vector2(0, -32)
+scale = Vector2(1, 0.66)
+shape = SubResource("CapsuleShape2D_i83fm")
