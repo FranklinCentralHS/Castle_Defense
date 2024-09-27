@@ -4,6 +4,7 @@ class_name baddie
 @export var speed = 10
 @export var damage = 1
 
+
 var movement_speed: float = 200.0
 var movement_target_position: Vector2 = Vector2(2308,1218.0)
 
@@ -14,7 +15,8 @@ func _ready():
 	# and the navigation layout.
 	navigation_agent.path_desired_distance = 4.0
 	navigation_agent.target_desired_distance = 4.0
-
+	
+	
 	# Make sure to not await during _ready.
 	call_deferred("actor_setup")
 
@@ -28,7 +30,7 @@ func actor_setup():
 func set_movement_target(movement_target: Vector2):
 	navigation_agent.target_position = movement_target
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	if navigation_agent.is_navigation_finished():
 		return
 
