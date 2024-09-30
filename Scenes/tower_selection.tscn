@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://cjs8nchmquog3"]
+
+[ext_resource type="Texture2D" uid="uid://2st1b6a6wfnj" path="res://assets/sprites/Isometric Tower Defense Pack/Sprites/Towers/Archer/archer_level_1.png" id="1_1mots"]
+
+[node name="Archer Tower" type="Panel"]
+offset_right = 144.0
+offset_bottom = 176.0
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(72, 88)
+texture = ExtResource("1_1mots")

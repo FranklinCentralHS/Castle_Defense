@@ -16,4 +16,3 @@ func _on_timer_timeout():
 
 func _place_tower():
 	var current_mouse_position = get_global_mouse_position()
-	if InputEventMouseButton() == true and 

@@ -12,7 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://cgelgchnlwkw1" path="res://assets/sprites/Isometric Tower Defense Pack/Sprites/Landscape tiles/buildingPlaceGrass.png" id="9_bchxc"]
 [ext_resource type="Texture2D" uid="uid://dngsy0qheear4" path="res://assets/sprites/Isometric Tower Defense Pack/Sprites/Road tiles/Spring biome/road_spring(5).png" id="10_tw5hp"]
 [ext_resource type="PackedScene" uid="uid://n8k6qp37r6nr" path="res://Scenes/ufo.tscn" id="12_g1vwb"]
-[ext_resource type="PackedScene" uid="uid://rp2tu2o8o6g7" path="res://Scenes/tower_selection.tscn" id="13_wtehh"]
+[ext_resource type="PackedScene" uid="uid://byms0b64jop77" path="res://Scenes/draggble_ui.tscn" id="13_34s3y"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_c4hc1"]
 texture = ExtResource("1_lu01y")
@@ -129,8 +129,9 @@ wait_time = 1.5
 [node name="CharacterBody2D" parent="." instance=ExtResource("12_g1vwb")]
 position = Vector2(-128, 83)
 
-[node name="Tower Selection" parent="." instance=ExtResource("13_wtehh")]
-position = Vector2(408, -256)
+[node name="Draggble UI" parent="." instance=ExtResource("13_34s3y")]
+offset = Vector2(600, -300)
+transform = Transform2D(1, 0, 0, 1, 600, -300)
 
 [connection signal="ready" from="." to="." method="_on_ready"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
