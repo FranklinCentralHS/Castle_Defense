@@ -1,59 +1,18 @@
-[gd_scene load_steps=9 format=3 uid="uid://rgxlcxhp3uhi"]
+[gd_scene load_steps=3 format=3 uid="uid://rgxlcxhp3uhi"]
 
 [ext_resource type="Texture2D" uid="uid://2st1b6a6wfnj" path="res://assets/sprites/Isometric Tower Defense Pack/Sprites/Towers/Archer/archer_level_1.png" id="1_nleyf"]
-[ext_resource type="Script" path="res://Scripts/archer_tower.gd" id="1_plu3w"]
-[ext_resource type="Texture2D" uid="uid://3vqpaenffyr2" path="res://assets/sprites/Isometric Tower Defense Pack/Sprites/Towers/Archer/bow_animation(1).png" id="2_o5xo0"]
-[ext_resource type="Texture2D" uid="uid://conv42suusksi" path="res://assets/sprites/Isometric Tower Defense Pack/Sprites/Towers/Archer/bow_animation(2).png" id="3_d0n60"]
-[ext_resource type="Texture2D" uid="uid://btkgrupso0ack" path="res://assets/sprites/Isometric Tower Defense Pack/Sprites/Towers/Archer/bow_animation(3).png" id="4_yh0w6"]
-[ext_resource type="Texture2D" uid="uid://0lin65uogr6w" path="res://assets/sprites/Isometric Tower Defense Pack/Sprites/Towers/Archer/bow_animation(4).png" id="5_l707i"]
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_7qb16"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": null
-}, {
-"duration": 1.0,
-"texture": ExtResource("2_o5xo0")
-}, {
-"duration": 1.0,
-"texture": ExtResource("3_d0n60")
-}, {
-"duration": 1.0,
-"texture": ExtResource("4_yh0w6")
-}, {
-"duration": 1.0,
-"texture": ExtResource("5_l707i")
-}, {
-"duration": 1.0,
-"texture": null
-}],
-"loop": false,
-"name": &"default",
-"speed": 10.0
-}]
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_bhjph"]
+radius = 88.0
+height = 176.0
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_vwdwn"]
-radius = 250.0
-height = 553.12
-
-[node name="Archer Tower" type="StaticBody2D"]
-script = ExtResource("1_plu3w")
+[node name="archer_tower" type="CharacterBody2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(0, -81.5)
+position = Vector2(0, -40)
 scale = Vector2(1, 0.981928)
 texture = ExtResource("1_nleyf")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Sprite2D"]
-position = Vector2(-17, -30.0429)
-rotation = 0.218166
-scale = Vector2(0.66, 0.66)
-sprite_frames = SubResource("SpriteFrames_7qb16")
-frame = 5
-frame_progress = 1.0
-
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, -40)
-scale = Vector2(1, 0.5)
-shape = SubResource("CapsuleShape2D_vwdwn")
+scale = Vector2(2, 1)
+shape = SubResource("CapsuleShape2D_bhjph")

@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=3 uid="uid://dn6p4mrpkopy3"]
+[gd_scene load_steps=25 format=3 uid="uid://dn6p4mrpkopy3"]
 
 [ext_resource type="Script" path="res://Scripts/Game.gd" id="1_7uwbp"]
 [ext_resource type="Texture2D" uid="uid://b32wirkx3gqs7" path="res://assets/sprites/Isometric Tower Defense Pack/Sprites/Road tiles/Spring biome/road_spring(1).png" id="1_lu01y"]
@@ -11,8 +11,6 @@
 [ext_resource type="Texture2D" uid="uid://pvc7rn5ftwrq" path="res://assets/sprites/Isometric Tower Defense Pack/Sprites/Landscape tiles/grass.png" id="8_tdten"]
 [ext_resource type="Texture2D" uid="uid://cgelgchnlwkw1" path="res://assets/sprites/Isometric Tower Defense Pack/Sprites/Landscape tiles/buildingPlaceGrass.png" id="9_bchxc"]
 [ext_resource type="Texture2D" uid="uid://dngsy0qheear4" path="res://assets/sprites/Isometric Tower Defense Pack/Sprites/Road tiles/Spring biome/road_spring(5).png" id="10_tw5hp"]
-[ext_resource type="PackedScene" uid="uid://n8k6qp37r6nr" path="res://Scenes/ufo.tscn" id="12_g1vwb"]
-[ext_resource type="PackedScene" uid="uid://rp2tu2o8o6g7" path="res://Scenes/tower_selection.tscn" id="13_wtehh"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_c4hc1"]
 texture = ExtResource("1_lu01y")
@@ -126,11 +124,7 @@ navigation_polygon = SubResource("NavigationPolygon_5y5ul")
 [node name="Timer" type="Timer" parent="."]
 wait_time = 1.5
 
-[node name="CharacterBody2D" parent="." instance=ExtResource("12_g1vwb")]
-position = Vector2(-128, 83)
-
-[node name="Tower Selection" parent="." instance=ExtResource("13_wtehh")]
-position = Vector2(408, -256)
+[node name="Towers" type="Node" parent="."]
 
 [connection signal="ready" from="." to="." method="_on_ready"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

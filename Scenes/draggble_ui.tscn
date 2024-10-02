@@ -3,8 +3,8 @@
 [ext_resource type="PackedScene" uid="uid://cjs8nchmquog3" path="res://Scenes/tower_selection.tscn" id="1_cuih6"]
 
 [node name="Draggble UI" type="CanvasLayer"]
-scale = Vector2(2, 2)
-transform = Transform2D(2, 0, 0, 2, 0, 0)
+scale = Vector2(3, 3)
+transform = Transform2D(3, 0, 0, 3, 0, 0)
 
 [node name="Panel" type="Panel" parent="."]
 offset_right = 168.0
