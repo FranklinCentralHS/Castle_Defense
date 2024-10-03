@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://n8k6qp37r6nr"]
+[gd_scene load_steps=6 format=3 uid="uid://n8k6qp37r6nr"]
 
 [ext_resource type="Script" path="res://Scripts/ufo.gd" id="1_dr3l3"]
 [ext_resource type="Texture2D" uid="uid://b0n4ykt07gc7y" path="res://assets/sprites/Isometric Tower Defense Pack/Sprites/UFO/UFO(1).png" id="2_uqf65"]
@@ -9,6 +9,10 @@ radius = 24.0
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_i83fm"]
 radius = 32.0
 height = 64.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_fa3kh"]
+radius = 32.0
+height = 80.0
 
 [node name="UFO" type="CharacterBody2D"]
 collision_layer = 2
@@ -28,3 +32,12 @@ scale = Vector2(1, 0.66)
 shape = SubResource("CapsuleShape2D_i83fm")
 
 [node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0, -24)
+shape = SubResource("CapsuleShape2D_fa3kh")
+disabled = true
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

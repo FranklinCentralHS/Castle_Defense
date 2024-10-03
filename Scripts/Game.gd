@@ -1,7 +1,7 @@
 extends Node2D
 class_name Game
 
-@onready var baddies = $"."
+@onready var baddies = $Enemies
 @onready var timer = $Timer
 @export var basic_enemy = preload("res://Scenes/ufo.tscn")
 @onready var tilemap = $TileMap
