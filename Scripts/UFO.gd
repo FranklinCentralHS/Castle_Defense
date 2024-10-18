@@ -1,4 +1,2 @@
 extends baddie
-class_name ufo
-
-
+class_name Ufo

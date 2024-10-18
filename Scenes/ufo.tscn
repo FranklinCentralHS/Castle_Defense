@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://n8k6qp37r6nr"]
 
-[ext_resource type="Script" path="res://Scripts/ufo.gd" id="1_dr3l3"]
+[ext_resource type="Script" path="res://Scripts/Ufo.gd" id="1_tg6r1"]
 [ext_resource type="Texture2D" uid="uid://b0n4ykt07gc7y" path="res://assets/sprites/Isometric Tower Defense Pack/Sprites/UFO/UFO(1).png" id="2_uqf65"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_wnkeg"]
@@ -16,7 +16,7 @@ height = 80.0
 
 [node name="UFO" type="CharacterBody2D"]
 collision_layer = 2
-script = ExtResource("1_dr3l3")
+script = ExtResource("1_tg6r1")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(0, -24)
